@@ -3,7 +3,7 @@
 #https://www.youtube.com/watch?v=FFE1VNMAZfc&ab_channel=ThePyCoach
 
 #%%
-#Crear multiples carpetas
+#Create multiple folders
 import calendar
 from pathlib import Path
 months = list(calendar.month_name[1:])
@@ -17,7 +17,7 @@ for i,month in enumerate(months):
 
 
 # %%
-#Extraer tablas desde un html
+#Extract tables from html
 import pandas as pd 
 simpsons = pd.read_html('https://en.wikipedia.org/wiki/List_of_The_Simpsons_episodes')
 simpsons[5]
