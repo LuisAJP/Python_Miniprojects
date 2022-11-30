@@ -25,7 +25,7 @@ simpsons[5]
 
 
 # %%
-#Extraer tablas desde un pdf
+#Extract tables from pdf
 #pip installl camelot-py no me funciona este ultimo ya luego investigare
 import camelot
 tabla=camelot.read_pdf('foo.pdf', pages='1')
