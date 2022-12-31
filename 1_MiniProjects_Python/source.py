@@ -3,7 +3,8 @@
 #https://www.youtube.com/watch?v=FFE1VNMAZfc&ab_channel=ThePyCoach
 
 #%%
-#Create multiple folders
+#---------------------------------------------------------------------
+#1 Create multiple folders
 import calendar
 from pathlib import Path
 months = list(calendar.month_name[1:])
@@ -17,7 +18,8 @@ for i,month in enumerate(months):
 
 
 # %%
-#Extract tables from html
+#---------------------------------------------------------------------
+#2 Extract tables from html
 import pandas as pd 
 simpsons = pd.read_html('https://en.wikipedia.org/wiki/List_of_The_Simpsons_episodes')
 simpsons[5]
@@ -25,7 +27,8 @@ simpsons[5]
 
 
 # %%
-#Extract tables from pdf
+#---------------------------------------------------------------------
+#3 Extract tables from pdf
 #pip installl camelot-py no me funciona este ultimo ya luego investigare
 import camelot
 tabla=camelot.read_pdf('foo.pdf', pages='1')
